@@ -1,5 +1,26 @@
 // _base.scss
 // ==============
+
+
+// Buttons
+// =============
+// white
+  .btn-white {
+    color              : rgba($white, 0.8);
+    border-color       : rgba($white, 0.8);
+    &.btn-outline-secondary {
+      border           : none;
+    }
+
+    &:hover {
+      color            : green;
+      border-color     : $white;
+      background-color : $white;
+    }
+  }
+
+
+
 body {
 
   font-size: 1.1em;

@@ -341,7 +341,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Verdana", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -4809,7 +4809,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Verdana", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4903,7 +4903,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Verdana", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6487,7 +6487,8 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   margin-bottom: 3rem !important;
 }
 
-.p-0 {
+.p-0, hero,
+.hero-video {
   padding: 0 0 !important;
 }
 
@@ -8524,6 +8525,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
+.btn-white {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+.btn-white.btn-outline-secondary {
+  border: none;
+}
+.btn-white:hover {
+  color: green;
+  border-color: #fff;
+  background-color: #fff;
+}
+
 body {
   font-size: 1.1em;
 }
@@ -8731,6 +8745,54 @@ section {
   width: 20%;
   min-width: 120px;
   max-width: 160px;
+}
+
+nav {
+  background-color: rgba(76, 162, 84, 0.9);
+}
+nav .logo {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background: url(../../images/fd-logo.svg) no-repeat center center;
+  display: block;
+  width: 148px;
+  height: 34px;
+}
+
+.embed-responsive video,
+.embed-responsive-16by9 {
+  min-height: 500px;
+}
+
+hero .hero-video .embed-responsive-16by9:before {
+  padding-top: 0%;
+  display: none;
+}
+hero .hero-video .embed-responsive-16by9 video {
+  height: initial;
+}
+hero .hero-text {
+  color: #fff;
+  font-weight: bold;
+  height: 500px;
+  margin-top: -500px;
+}
+hero .hero-text h1 {
+  margin-top: 200px;
+  font-weight: bold;
+  text-shadow: 0px 0px 130px rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 0px 130px 0 rgba(0, 0, 0, 0.6);
+}
+hero .hero-text .btn-watch {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  mix-blend-mode: screen;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .pixgrid img {

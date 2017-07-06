@@ -6,20 +6,38 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top">
+  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+    <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">FreshDirect</a>
+      <a class="navbar-brand logo" href="#">FreshDirect</a>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
         </ul>
-        <button class="btn btn-outline-secondary mx-2" type="submit">Sign Out</button>
-        <button class="btn btn-outline-primary mx-2" type="submit">Create Account</button>
+        <button class="btn btn-outline-secondary btn-white mx-2" type="submit">Sign In</button>
+        <button class="btn btn-outline-primary btn-white mx-2" type="submit">Create Account</button>
       </div>
-    </nav>
-
+    </div>
+  </nav>
+  <hero>
+    <div class="hero-video container-fluid">
+      <div class="embed-responsive embed-responsive-16by9">
+        <video autoplay loop class="embed-responsive-item">
+            <source src="video/home_silent.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="hero-text container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <h1 class="display-4 text-center">The Freshest Groceries Delivered to Your Door.</h1>
+              <button class="btn btn-watch btn-white btn-outline-primary mx-auto px-5" type="submit">Watch</button>
+        </div>
+      </div>
+    </div>
+  </hero>
     <div class="container">
 
       <div class="starter-template">
