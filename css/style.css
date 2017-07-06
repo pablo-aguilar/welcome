@@ -8533,9 +8533,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   border: none;
 }
 .btn-white:hover {
-  color: green;
+  color: #4CA254;
   border-color: #fff;
   background-color: #fff;
+}
+
+.btn-business {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: #3F5267;
+  background-color: #3F5267;
+}
+.btn-business:hover {
+  color: #fff;
+  background-color: #2c3947;
 }
 
 body {
@@ -8547,10 +8557,10 @@ body {
 }
 
 .container {
+  position: relative;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -8558,8 +8568,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.5em;
   margin-bottom: 10px;
+  font-size: 3.5em;
 }
 @media (max-width: 700px) {
   h1 {
@@ -8572,10 +8582,10 @@ h2 {
 }
 
 p {
+  margin-top: 15px;
+  margin-bottom: 20px;
   font-size: 1.3em;
   line-height: 1.5em;
-  margin-bottom: 20px;
-  margin-top: 15px;
 }
 
 section {
@@ -8793,6 +8803,29 @@ hero .hero-text .btn-watch {
   color: black;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+zip-check {
+  display: block;
+  border-bottom: 2px solid #4CA254;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+zip-check .text {
+  font-size: 1rem;
+  line-height: 40px;
+}
+zip-check .zip-input {
+  position: relative;
+  width: 120px;
+}
+zip-check .form-control-label {
+  position: absolute;
+  bottom: -.5rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+zip-check .zip-code {
+  text-align: center;
 }
 
 .pixgrid img {

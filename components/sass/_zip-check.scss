@@ -1,0 +1,26 @@
+zip-check {
+  display       : block;
+  border-bottom : 2px solid $brand-primary;
+  box-shadow    : 0px 0px 30px 0px rgba(0, 0, 0, 0.30);
+
+  .text {
+    font-size   : $font-size-base;
+    line-height : 40px;
+  }
+
+  .zip-input {
+    position : relative;
+    width    : 120px;
+  }
+
+  .form-control-label {
+    position  : absolute;
+    bottom    : -.5rem;
+    width     : 100%;
+    font-size : $font-size-sm;
+  }
+
+  .zip-code {
+    text-align : center;
+  }
+}

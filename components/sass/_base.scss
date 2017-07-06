@@ -1,70 +1,84 @@
 // _base.scss
+
 // ==============
 
-
 // Buttons
-// =============
-// white
-  .btn-white {
-    color              : rgba($white, 0.8);
-    border-color       : rgba($white, 0.8);
-    &.btn-outline-secondary {
-      border           : none;
-    }
 
-    &:hover {
-      color            : green;
-      border-color     : $white;
-      background-color : $white;
-    }
+// =============
+
+// white
+
+.btn-white {
+  color        : rgba($white, 0.8);
+  border-color : rgba($white, 0.8);
+
+  &.btn-outline-secondary {
+    border : none;
   }
 
+  &:hover {
+    color            : $brand-primary;
+    border-color     : $white;
+    background-color : $white;
+  }
+}
 
+.btn-business {
+  color            : rgba($white, 0.8);
+  border-color     : $brand-business;
+  background-color : $brand-business;
+
+  &:hover {
+    color : $white;
+    background-color : darken( $brand-business,10%);
+
+  }
+}
 
 body {
-
-  font-size: 1.1em;
+  font-size : 1.1em;
 }
 
 #content {
-  font-size: 2em;
+  font-size : 2em;
 }
 
 .container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
+  position  : relative;
+  width     : 90%;
+  max-width : 1000px;
+  margin    : 0 auto;
 }
 
 #{headings()} {
-  font-size: 3em;
+  font-size : 3em;
 }
 
 h1 {
-  font-size: 3.5em;
-  margin-bottom: 10px;
-
+  margin-bottom : 10px;
+  font-size     : 3.5em;
   @media (max-width: 700px) {
-    font-size: 2.2em;
+    font-size : 2.2em;
   }
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size : 1.5em;
 }
 
 p {
-  font-size: 1.3em;
-  line-height: 1.5em;
-  margin-bottom: 20px;
-    margin-top: 15px;
+  margin-top    : 15px;
+  margin-bottom : 20px;
+  font-size     : 1.3em;
+  line-height   : 1.5em;
 }
 
 section {
-  padding: 20px 0;
+  padding : 20px 0;
 }
 
 .artgroup {
-    @include clearfix;
-} //artgroup
+  @include clearfix;
+}
+
+// artgroup
