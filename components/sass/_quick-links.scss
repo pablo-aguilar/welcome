@@ -1,0 +1,13 @@
+.quick-links{
+  text-align: center;
+  .quick-link,
+  .quick-link-group {
+    width: 50%;
+  }
+  h3 {
+    font-size: $font-size-h5;
+  }
+  .body{
+    font-size: $font-size-base;
+  }
+}

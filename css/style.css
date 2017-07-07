@@ -8828,6 +8828,20 @@ zip-check .zip-code {
   text-align: center;
 }
 
+.quick-links {
+  text-align: center;
+}
+.quick-links .quick-link,
+.quick-links .quick-link-group {
+  width: 50%;
+}
+.quick-links h3 {
+  font-size: 1.25rem;
+}
+.quick-links .body {
+  font-size: 1rem;
+}
+
 .pixgrid img {
   max-width: 90px;
   display: block;

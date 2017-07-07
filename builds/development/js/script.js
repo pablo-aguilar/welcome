@@ -102,6 +102,17 @@ $(function() {
 
 }); //function
 
+$(function() {
+  var Mustache = require('mustache');
+
+  $.getJSON('js/data.json', function(data) {
+    var template = $('#quick-links-tpl').html();
+    var html = Mustache.to_html(template, data);
+    $('#quick-links').html(html);
+  }); //getJSON
+
+}); //function
+
 },{"bootstrap":2,"jquery":3,"mustache":4,"tether":5}],2:[function(require,module,exports){
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
