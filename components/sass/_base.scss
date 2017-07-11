@@ -34,6 +34,13 @@
 
   }
 }
+.btn-more {
+  position: relative;
+    &:after {
+      content: "";
+
+    }
+}
 
 body {
   font-size : 1.1em;
@@ -82,3 +89,7 @@ section {
 }
 
 // artgroup
+// circle-mask
+.circle-mask {
+  border-radius: 100%;
+}

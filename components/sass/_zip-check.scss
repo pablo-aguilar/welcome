@@ -1,8 +1,7 @@
-zip-check {
+.zip-check {
   display       : block;
-  border-bottom : 2px solid $brand-primary;
-  box-shadow    : 0px 0px 30px 0px rgba(0, 0, 0, 0.30);
-
+  // box-shadow    : 0px 20px 30px -20px rgba(0, 0, 0, 0.3);
+  border-bottom: 12px solid $gray-lighter;
   .text {
     font-size   : $font-size-base;
     line-height : 40px;
@@ -15,9 +14,10 @@ zip-check {
 
   .form-control-label {
     position  : absolute;
-    bottom    : -.5rem;
+    bottom    : -.25rem;
     width     : 100%;
-    font-size : $font-size-sm;
+    font-size : $font-size-xs;
+    color     : $gray-light;
   }
 
   .zip-code {
@@ -26,5 +26,5 @@ zip-check {
 }
 
 @include media-breakpoint-down(sm) {
-  
+
 }

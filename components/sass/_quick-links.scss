@@ -1,13 +1,39 @@
-.quick-links{
-  text-align: center;
-  .quick-link,
-  .quick-link-group {
-    width: 50%;
+.quick-links {
+  border-bottom : 12px solid $gray-lighter;
+  text-align    : center;
+  .col-size-300 .quick-link {
+    min-width: 300px;
   }
-  h3 {
-    font-size: $font-size-h5;
+  .quick-links-header {
+    h2{
+      font-size: $font-size-h1;
+      color: $gray;
+      text-align: center;
+      font-weight: normal;
+      width: 100%;
+    }
   }
-  .body{
-    font-size: $font-size-base;
+  .quick-link {
+    flex : 1;
+  }
+
+  .img-wrap {
+    min-height  : 80px;
+    text-align  : center;
+    line-height : 80px;
+
+    img {
+      vertical-align : middle;
+    }
+  }
+
+  .title {
+    border-bottom : 2px solid $brand-primary;
+    font-size     : $font-size-h5;
+    font-weight   : normal;
+  }
+
+  .body {
+    font-size : $font-size-base;
   }
 }
