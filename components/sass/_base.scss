@@ -51,10 +51,9 @@ body {
 }
 
 .container {
-  position  : relative;
-  width     : 90%;
-  max-width : 1000px;
-  margin    : 0 auto;
+  //position  : relative;
+  max-width : 970px;
+  //margin    : 0 auto;
 }
 
 #{headings()} {

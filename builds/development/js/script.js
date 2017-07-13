@@ -1,7 +1,8 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-var fill;
+var fill, scrolltoAnchor;
 
 window.$ = window.jQuery = require('jquery');
+
 window.Tether = require('tether');
 
 require('bootstrap');
@@ -15,6 +16,22 @@ $(function() {
 })('The t most creative minds Hello in Art');
 
 fill;
+
+scrolltoAnchor = function() {
+  return $(" a[href*='#']").click(function() {
+    var anchorTo, offset;
+    $(this).hide();
+    anchorTo = $(this).attr('href');
+    offset = 60;
+    console.log(anchorTo);
+    $('html, body').stop().animate({
+      scrollTop: $(anchorTo).offset().top - offset
+    }, 400);
+    return false;
+  });
+};
+
+scrolltoAnchor();
 
 var rclick = function() {
   var myNodes = document.querySelectorAll(".rclick");

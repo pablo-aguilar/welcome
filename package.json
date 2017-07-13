@@ -33,6 +33,7 @@
     "bootstrap": "^4.0.0-alpha.6",
     "gulp-concat-multi": "^1.0.1",
     "jquery": "^3.2.1",
+    "smoothscroll-polyfill": "^0.3.5",
     "tether": "^1.4.0"
   }
 }

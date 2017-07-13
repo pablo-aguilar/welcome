@@ -2,23 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FD welcome zip check</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
-    <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand logo" href="#">FreshDirect</a>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-        </ul>
-        <button class="btn btn-outline-secondary btn-white mx-2" type="submit">Sign In</button>
-        <button class="btn btn-outline-primary btn-white mx-2" type="submit">Create Account</button>
-      </div>
+  <nav class="navbar navbar-inverse fixed-top px-0">
+    <div class="container d-flex mx-0 px-0 mx-sm-auto">
+      <a class="navbar-brand logo m-0" href="#">FreshDirect</a>
+        <button class="btn btn-outline-secondary btn-white ml-auto" type="submit">Sign In</button>
+        <button class="btn btn-outline-primary btn-white mx-2 " type="submit">Create Account</button>
     </div>
   </nav>
   <hero>
@@ -31,98 +24,97 @@
     </div>
     <div class="hero-text container">
       <div class="row justify-content-center">
-        <div class="col-8">
-          <h1 class="display-4 text-center">The Freshest Groceries Delivered to Your Door.</h1>
-              <button class="btn btn-watch btn-white btn-outline-primary mx-auto px-5" type="submit">Watch</button>
-        </div>
+          <h1 class="text-center">The Freshest Groceries Delivered to Your Door.</h1>
+          <button class="btn btn-watch btn-white btn-outline-primary mx-auto px-5" type="submit">Watch</button>
       </div>
     </div>
   </hero><!-- hero -->
-  <div class="zip-check container-fluid py-3">
-    <div class="container">
+
+  <div class="zip-check zip-check-large container-fluid py-4">
+    <div class="container px-0 m-0 mx-sm-auto">
       <div class="d-flex justify-content-center flex-column flex-sm-row shop-btns">
-        <div class="pr-2 zip-text">
-          <p class="text-right text mt-0">Check if we deliver to</p>
+        <div class="pb-3 pb-sm-0 pr-2 zip-text">
+          <h2 class="text-sm-right text-center text m-0">Where should we deliver?</h2>
         </div><!-- zip-text -->
-        <div class="p-0 zip-input">
+        <div class="zip-input pb-4 pb-sm-0 mx-auto mx-sm-4">
           <label for="example-text-input" class="form-control-label text-center">zip code</label>
-          <input class="form-control zip-code" type="text" value="11101" id="zip-code1">
+          <input class="form-control zip-code  mr-4" type="text" value="11101" id="zip-code1">
         </div><!-- zip-input-->
-        <div class="px-2">
+        <div class="pr-0 pb-2 pb-sm-0 pr-sm-2 mx-auto mx-sm-0 d-flex justify-content-center">
           <button class="btn btn-primary btn-business px-5" type="submit">Shop Office</button>
         </div>
-        <div class="px-2">
+        <div class="mx-auto mx-sm-0 d-flex justify-content-center">
           <button class="btn btn-primary px-5" type="submit">Shop Home</button>
         </div>
-      </div><!-- shop-btns -->
+      </div><!-- d-flex -->
     </div><!-- container -->
   </div><!-- zip-check -->
 
-  <div class="quick-links pt-3 container mb-3 d-flex row">
+  <div class="quick-links pt-3 container mb-5">
     <div class="quick-link-body d-flex justify-content-center flex-column flex-sm-row">
-      <div class="quick-link px-2 mb-4 d-flex flex-column align-content-start">
-          <div class="img-wrap">
-            <img src="images/mixitems.svg" alt="">
+        <a href="#how-it-works" class="quick-link quick-link-anchor p-3 mb-4 d-flex flex-column align-content-start">
+          <div class="img-wrap d-flex justify-content-center">
+            <svg class="icon-mixed" width="136" height="50" viewBox="0 0 136 50" xmlns="http://www.w3.org/2000/svg"><title>mixitems</title><g fill-rule="evenodd"><path d="M63.097 12.12c-.224 2.072-.74 6.858-.403 9.018.578 3.728 2.983 5.867 6.597 5.867h.107c-1.39-1.11-2.28-2.933-2.577-5.296-.29-2.38.16-7.523.344-9.59h-4.067zm6.285 18.858c-5.737 0-9.404-3.077-10.325-8.665-.703-4.16.062-11.106.43-14.445l.01-.088h19.772l.01.088c.366 3.34 1.13 10.287.428 14.446-.922 5.587-4.59 8.664-10.326 8.664zM58.967 48.06h20.858v-4.38h-8.24l-.013-8.568.087-.01c6.732-.832 11.243-5.265 12.374-12.163 1.058-6.437-.697-17.573-.716-17.675L83.046 3.4H55.72l-.272 1.86c-.02.107-1.756 11.356-.717 17.68 1.132 6.896 5.647 11.33 12.39 12.16l.086.012v8.568h-8.24v4.38zM38.936 18.035l4.077-.934c1.16 3.767.17 7.56-3.086 10.788-7.87 7.87-19.79 16.11-28.114 20.782-1.473.82-3.115 1.274-4.7 1.274-1.982 0-3.794-.708-5.097-2.01-2.378-2.378-2.69-6.314-.736-9.796 4.672-8.324 12.91-20.244 20.782-28.115 2.378-2.378 4.983-3.568 7.758-3.568.99 0 1.982.17 3 .482l-.962 4.02c-.028.142-.028.255-.056.397-.68-.255-1.33-.397-1.982-.397-1.558 0-3.058.736-4.56 2.265-.084.057-.14.142-.225.227l5.72 5.69-3.2 3.227-5.606-5.634c-3.74 4.22-7.39 9.088-10.59 13.76l4.02 4.02-3.2 3.228-3.37-3.368c-1.33 2.123-2.547 4.134-3.594 5.974-.935 1.67-.935 3.483 0 4.39.566.565 1.36.706 1.897.706.82 0 1.698-.254 2.49-.707 4.418-2.464 9.826-5.946 15.092-9.853l-4.842-4.842 3.2-3.2 5.266 5.267c3.057-2.435 5.945-4.927 8.436-7.418.878-.88 3.143-3.144 1.87-6.598.084-.028.197-.028.31-.057zm-1.33-3.454c-.595 0-1.19-.254-1.614-.678-.538-.538-.793-1.36-.595-2.124L38.144 0l4.416 1.02-1.925 8.238 8.24-1.925 1.02 4.417-11.78 2.775c-.17.028-.34.056-.51.056zM110.38 10.462l12.332 9.512-2.596 3.383-4.5-3.47-11.49 14.97-3.382-2.596 11.494-14.98-4.455-3.435 2.596-3.383zm21.35 15.496c-.68 5.196-4.656 9.858-12.508 14.67-5.827 3.61-13.07 5.38-18.903 4.616-3.73-.49-6.526-1.923-7.296-3.74-1.403-3.43.017-6.24 2.648-10.916l.22-.382c1.085-1.896 2.29-4.003 3.25-6.368.834-1.944 1.126-4.167 1.374-6.463.286-3.734.61-7.976 4.34-10.993 2.85-2.39 6.31-2.517 8.71-2.203 7.387.968 15.117 7.287 17.232 14.083.933 2.852 1.238 5.37.933 7.695zm3.005-8.784c-2.668-8.504-11.542-15.817-20.64-17.01-4.596-.604-8.74.47-11.986 3.1-4.74 3.906-5.152 9.074-5.483 13.226l-.044.552c-.212 2.06-.634 3.903-1.187 5.2-.65 1.55-1.43 2.974-2.186 4.35l-.07.13c-.333.605-.66 1.203-.964 1.796l-.497.93c-2.25 4.193-4.578 8.53-2.426 13.623 1.388 3.307 5.223 5.6 10.524 6.296 6.89.904 14.754-.988 21.574-5.192 9-5.525 13.586-11.11 14.435-17.576.373-2.848.03-5.93-1.052-9.424z"/></g></svg>
           </div>
-        <div class="text">
-        <h3 class="title py-2">How It Works</h3>
-          <p class="body my-2">Shop local, organic produce, meat and fish, and delicious staples</p>
-        </div>
-        <div class="footer mt-auto">
-          <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
-        </div>
-      </div><!-- quick-link -->
-      <div class="quick-link px-2 mb-4 d-flex flex-column align-content-start">
-          <div class="img-wrap">
-            <img src="images/truck.svg" alt="">
+          <div class="body">
+            <h3 class="title py-2">How It Works</h3>
+            <p class="text my-2">Shop local, organic produce, meat and fish, and delicious staples</p>
           </div>
-        <div class="text">
-        <h3 class="title py-2">Free Delivery</h3>
-          <p class="body my-2">Get unlimited next day delivery to your door on your schedule, with DeliveryPass&#174; </p>
-        </div>
-        <div class="footer mt-auto">
-          <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
-        </div>
-      </div><!-- quick-link -->
-      <div class="quick-link px-2 mb-4 d-flex flex-column align-content-start">
-          <div class="img-wrap">
-            <img src="images/dinner.svg" alt="">
+          <div class="footer mt-auto">
+            <svg class="icon-arrow-down" width="25" height="15" viewBox="0 0 25 15" xmlns="http://www.w3.org/2000/svg"><title>arrow-down</title><path d="M23.78.417c-.557-.556-1.3-.556-1.855 0l-9.827 10.94L2.27.417C1.716-.14.974-.14.418.417s-.556 1.483 0 2.04L11.17 14.51c.557.555 1.3.555 1.855 0L23.78 2.64c.185-.37.37-.742.37-1.112 0-.37-.185-.742-.37-1.113" fill-rule="nonzero"/></svg>
           </div>
-        <div class="text">
-        <h3 class="title py-2">Win Dinner!</h3>
-          <p class="body my-2">Need dinner insperation? Check out our recipes, Meal Kits and food hacks. </p>
-        </div>
-        <div class="footer mt-auto">
-          <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
-        </div>
-      </div><!-- quick-link -->
-      <div class="quick-link px-2 mb-4 d-flex flex-column justify-content-center">
-          <div class="img-wrap">
-            <img src="images/heart.svg" alt="">
+        </a><!-- quick-link -->
+        <a href="#delivery-pass" class="quick-link quick-link-anchor p-3 mb-4 d-flex flex-column align-content-start">
+          <div class="img-wrap d-flex justify-content-center">
+            <svg class="icon-truck" width="94" height="48" viewBox="0 0 94 48" xmlns="http://www.w3.org/2000/svg"><title>trunk</title><path d="M15.978 21.865H5.888v5.886h10.09v-5.885zm.84-10.092H0v5.887h16.82v-5.887zm64.4.156H64.975V0H20.36v35.788h-6.064v6.073h12.128V6.074H58.91v29.932l-7.796-.434c-1.3-3.686-4.765-6.29-9.096-6.29-5.198 0-9.53 4.122-9.53 9.328 0 5.205 4.332 9.326 9.53 9.326 4.33 0 7.363-2.17 8.663-6.073h16.244c1.3 3.688 4.98 6.074 9.096 6.074 4.33 0 7.796-2.17 9.096-6.073h8.23V23.643L81.218 11.93zm-39.18 30.118c-1.886 0-3.354-1.472-3.354-3.364s1.468-3.364 3.355-3.364c1.886 0 3.354 1.472 3.354 3.364.21 1.892-1.468 3.364-3.355 3.364zm35.626-.434c-.445.217-1.113.434-1.78.434-.668 0-1.336-.217-1.78-.434-1.114-.65-1.782-1.737-1.782-2.822 0-1.302.89-2.387 2.003-3.038.446-.217 1.113-.434 1.78-.434.67 0 1.114.217 1.782.434 1.113.65 2.003 1.736 2.003 3.038-.445 1.302-1.113 2.388-2.226 2.822zm8.954-7.135h-1.91c-1.274-3.575-4.67-6.098-8.916-6.098-4.033 0-7.642 2.523-8.916 6.097h-2.123V17.66H78.55l7.856 7.78v9.04h.212z"  fill-rule="evenodd"/></svg>
           </div>
-        <div class="text">
-        <h3 class="title py-2">Who loves us?</h3>
-          <p class="body my-2">Our passion for food is contagious.</p>
-        </div>
-        <div class="footer mt-auto">
-          <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
-        </div>
-      </div><!-- quich-link -->
-    </div>
+          <div class="body">
+            <h3 class="title py-2">Free Delivery</h3>
+            <p class="text my-2">Get unlimited next day delivery to your door on your schedule, with DeliveryPass&#174; </p>
+          </div>
+          <div class="footer mt-auto">
+            <svg class="icon-arrow-down" width="25" height="15" viewBox="0 0 25 15" xmlns="http://www.w3.org/2000/svg"><title>arrow-down</title><path d="M23.78.417c-.557-.556-1.3-.556-1.855 0l-9.827 10.94L2.27.417C1.716-.14.974-.14.418.417s-.556 1.483 0 2.04L11.17 14.51c.557.555 1.3.555 1.855 0L23.78 2.64c.185-.37.37-.742.37-1.112 0-.37-.185-.742-.37-1.113" fill-rule="nonzero"/></svg>
+          </div>
+        </a><!-- quick-link -->
+        <a href="#win-dinner" class="quick-link  quick-link-anchor p-3 mb-4 d-flex flex-column align-content-start">
+          <div class="img-wrap d-flex justify-content-center">
+            <svg width="63" height="62" viewBox="0 0 63 62" xmlns="http://www.w3.org/2000/svg"><title>dinner</title><path d="M57.71 56.344c-.362.364-.758.54-1.208.54-.6 0-1.263-.32-1.82-.88l-13.326-13.33-1.612 1.348-1.41 1.182-10.73-10.728c-4.863-4.864-8.483-11.962-6.32-17.353 8.834 8.852 35.786 35.888 36.088 36.19.56.56.88 1.223.88 1.823 0 .45-.177.845-.54 1.208m2.907-6.276l-9.183-9.21V9.416C51.437 4.224 47.214 0 42.02 0H9.417C4.224 0 0 4.224 0 9.416v42.737c0 5.192 4.224 9.416 9.416 9.416h36.806l-4.592-4.593H9.416c-2.66 0-4.825-2.164-4.825-4.824V9.416c0-2.66 2.166-4.825 4.826-4.825H42.02c2.662 0 4.826 2.166 4.826 4.826v26.837c-9.687-9.716-21.428-21.49-24.385-24.447l-1.79-1.793-1.607 1.96c-2.323 2.83-3.346 6.853-2.807 11.034.64 4.967 3.442 10.056 8.102 14.715L38.206 51.57l1.582-1.582c.148-.13.655-.558 1.293-1.095L51.433 59.25c1.432 1.435 3.233 2.226 5.07 2.226 1.658 0 3.24-.67 4.455-1.885 1.216-1.214 1.886-2.797 1.886-4.455 0-1.837-.792-3.637-2.224-5.067m-43.875-7.87c-1.832 0-3.322 1.49-3.322 3.322s1.49 3.323 3.322 3.323 3.322-1.49 3.322-3.323c0-1.832-1.49-3.322-3.322-3.322m0 11.236c-4.364 0-7.914-3.55-7.914-7.914 0-4.363 3.55-7.913 7.915-7.913 4.363 0 7.914 3.55 7.914 7.913 0 4.364-3.552 7.914-7.915 7.914" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="body">
+            <h3 class="title py-2">Win Dinner!</h3>
+            <p class="text my-2">Need dinner insperation? Check out our recipes, Meal Kits and food hacks. </p>
+          </div>
+          <div class="footer mt-auto">
+            <svg class="icon-arrow-down" width="25" height="15" viewBox="0 0 25 15" xmlns="http://www.w3.org/2000/svg"><title>arrow-down</title><path d="M23.78.417c-.557-.556-1.3-.556-1.855 0l-9.827 10.94L2.27.417C1.716-.14.974-.14.418.417s-.556 1.483 0 2.04L11.17 14.51c.557.555 1.3.555 1.855 0L23.78 2.64c.185-.37.37-.742.37-1.112 0-.37-.185-.742-.37-1.113" fill-rule="nonzero"/></svg>
+          </div>
+        </a><!-- quick-link -->
+        <a href="#testimonials" class="quick-link quick-link-anchor p-3 mb-4 d-flex flex-column justify-content-center">
+          <div class="img-wrap d-flex justify-content-center">
+            <svg class="icon-heart" width="60" height="59" viewBox="0 0 60 59" xmlns="http://www.w3.org/2000/svg"><title>heart</title><path d="M53.898 17.23c-.225-4.12-2.21-7.154-4.008-8.578-2.023-1.685-4.832-2.66-7.49-2.66-8.58 0-9.29 7.567-9.44 8.43-.188.973-.862 2.358-2.885 2.358-2.097 0-2.96-1.273-3.11-2.397-.11-.786-.86-8.39-9.438-8.39-2.66 0-5.468.974-7.49 2.66-1.8 1.423-3.784 4.457-4.01 8.577-.223 3.22.638 8.166 5.77 13.485 7.978 8.277 14.832 15.394 18.166 18.878 3.333-3.484 10.188-10.6 18.166-18.878 5.13-5.32 5.992-10.264 5.768-13.485m-1.46 17.642C41.16 46.522 32.21 55.922 32.135 55.998l-2.173 2.285-2.173-2.285c-.074-.075-9.027-9.477-20.3-21.126C.86 27.98-.228 21.312.034 16.892c.3-5.168 2.622-10 6.218-12.922C9.363 1.46 13.445 0 17.527 0c6.18 0 10.114 2.66 12.436 5.88C32.285 2.66 36.218 0 42.4 0c4.08 0 8.164 1.46 11.273 3.97 3.596 2.922 5.918 7.754 6.218 12.923.263 4.42-.824 11.087-7.453 17.98" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="body">
+          <h3 class="title py-2">Who loves us?</h3>
+            <p class="text my-2">Our passion for food is contagious.</p>
+          </div>
+          <div class="footer mt-auto">
+            <svg class="icon-arrow-down" width="25" height="15" viewBox="0 0 25 15" xmlns="http://www.w3.org/2000/svg"><title>arrow-down</title><path d="M23.78.417c-.557-.556-1.3-.556-1.855 0l-9.827 10.94L2.27.417C1.716-.14.974-.14.418.417s-.556 1.483 0 2.04L11.17 14.51c.557.555 1.3.555 1.855 0L23.78 2.64c.185-.37.37-.742.37-1.112 0-.37-.185-.742-.37-1.113" fill-rule="nonzero"/></svg>
+          </div>
+        </a><!-- quich-link -->
+    </div><!-- quick-link-body -->
   </div><!-- quich-links -->
 
-  <div class="article-list article-num-list container py-4 mb-3">
-    <h1>How it works</h1>
+  <div id="how-it-works" class="article-list article-num-list container pb-5 pt-0 mb-5">
+    <h2>How it works</h2>
     <div class="hero-image">
-      <img src="/images/how-it-works/hero-how-it-works.jpg" alt="">
+      <img src="images/how-it-works/hero-how-it-works.jpg" alt="">
     </div>
-    <div class="article pl-5 pt-3">
-      <h2 class="header py-3 pl-0 ml-5 mr-3">We Find the best food</h2>
-      <div class="body py-3 pr-3 d-flex flex-column flex-sm-row ">
-        <div class="text ml-5 p pr-3 flex-last flex-sm-first">
+    <div class="article pl-0 pl-sm-5 pt-3">
+      <h3 class="header py-3 pl-0 ml-0 mt-5 mt-sm-0 ml-sm-5 mr-0 mr-sm-3">We find the best food</h3>
+      <div class="body pr-0 py-3 pr-sm-3 d-flex flex-column flex-sm-row">
+        <div class="text ml-0 ml-sm-5 p-3 pl-sm-0 pt-sm-0 flex-last flex-sm-first">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quas, at neque! Odit quod, eum nam illo excepturi nemo ea similique dignissimos quia sit tempore vel perspiciatis ipsa aliquam rem.</p>
           <div class="footer">
-            <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
+            <a class="btn btn-outline-primary mt-2 px-5 px-sm-3" href="#">Learn More</a>
           </div>
         </div>
         <div class="media order-sm-first  embed-responsive embed-responsive-16by9">
@@ -130,13 +122,13 @@
         </div>
       </div>
     </div><!-- Article -->
-    <div class="article pl-5 pt-3">
-      <h2 class="header py-3 pl-0 ml-5 mr-3">We pack it fresh.</h2>
-      <div class="body py-3 pr-3 d-flex flex-column flex-sm-row ">
-        <div class="text ml-5 p pr-3 flex-last flex-sm-first">
+    <div class="article pl-0 pl-sm-5 pt-3">
+      <h3 class="header py-3 pl-0 ml-0 mt-5 mt-sm-0 ml-sm-5 mr-0 mr-sm-3">We pack it fresh.</h3>
+      <div class="body pr-0 py-3 pr-sm-3 d-flex flex-column flex-sm-row">
+        <div class="text ml-0 ml-sm-5 p-3 pl-sm-0 pt-sm-0 flex-last flex-sm-first">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quas, at neque! Odit quod, eum nam illo excepturi nemo ea similique dignissimos quia sit tempore vel perspiciatis ipsa aliquam rem.</p>
           <div class="footer">
-            <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
+            <a class="btn btn-outline-primary mt-2 px-5 px-sm-3" href="#">Learn More</a>
           </div>
         </div>
         <div class="media order-sm-first">
@@ -144,13 +136,13 @@
         </div>
       </div>
     </div><!-- Article -->
-    <div class="article pl-5 pt-3">
-      <h2 class="header py-3 pl-0 ml-5 mr-3">You get it to you fast.</h2>
-      <div class="body py-3 pr-3 d-flex flex-column flex-sm-row ">
-        <div class="text ml-5 p pr-3 flex-last flex-sm-first">
+    <div class="article pl-0 pl-sm-5 pt-3">
+      <h3 class="header py-3 pl-0 ml-0 mt-5 mt-sm-0 ml-sm-5 mr-0 mr-sm-3">You get it fast.</h3>
+      <div class="body pr-0 py-3 pr-sm-3 d-flex flex-column flex-sm-row">
+        <div class="text ml-0 ml-sm-5 p-3 pl-sm-0 pt-sm-0 flex-last flex-sm-first">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quas, at neque! Odit quod, eum nam illo excepturi nemo ea similique dignissimos quia sit tempore vel perspiciatis ipsa aliquam rem.</p>
           <div class="footer">
-            <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
+            <a class="btn btn-outline-primary mt-2 px-5 px-sm-3" href="#">Learn More</a>
           </div>
         </div>
         <div class="media order-sm-first">
@@ -160,8 +152,28 @@
     </div><!-- Article -->
   </div><!-- Article list -->
 
-  <div class="quick-links quick-link-dark container d-flex justify-content-center row py-4 mb-3">
-    <div class="quick-links-header pb-4 row">
+  <div class="zip-check zip-check-large container pb-5 pt-0 mb-5">
+    <div class="container px-0 m-0 mx-sm-auto">
+      <div class="d-flex justify-content-center flex-column flex-sm-row shop-btns">
+        <div class="pb-3 pb-sm-0 pr-2 zip-text">
+          <h2 class="text-sm-right text-center text m-0">Where should we deliver?</h2>
+        </div><!-- zip-text -->
+        <div class="zip-input pb-4 pb-sm-0 mx-auto mx-sm-4">
+          <label for="example-text-input" class="form-control-label text-center">zip code</label>
+          <input class="form-control zip-code  mr-4" type="text" value="11101" id="zip-code1">
+        </div><!-- zip-input-->
+        <div class="pr-0 pb-2 pb-sm-0 pr-sm-2 mx-auto mx-sm-0 mx-sm-0 d-flex justify-content-center">
+          <button class="btn btn-primary btn-business px-5" type="submit">Shop Office</button>
+        </div>
+        <div class="mx-auto mx-sm-0 mx-sm-0 d-flex justify-content-center">
+          <button class="btn btn-primary px-5" type="submit">Shop Home</button>
+        </div>
+      </div><!-- d-flex -->
+    </div><!-- container -->
+  </div><!-- zip-check 2-->
+
+  <div id="delivery-pass" class="quick-links quick-link-dark container pb-5 pt-0 mb-5">
+    <div class="quick-links-header pb-4">
       <h2>DeliveryPass&#174;</h2>
     </div>
     <div class="quick-link-body d-flex justify-content-center flex-column flex-sm-row mb-2">
@@ -193,46 +205,43 @@
         </div>
       </div><!-- quick-link -->
     </div><!-- quick-link-body -->
-    <div class="quick-link-footer">
+    <div class="quick-link-footer pt-4 pt-sm-0">
       <a href="#" class="btn btn-primary p-3 px-5 mx-auto">Get DeliveryPass&#174;</a>
     </div>
   </div><!-- quich-links Delivery pass -->
 
-
-  <div class="zip-check container py-4 mb-3">
-    <div class="form-group justify-content-center mb-0 row">
-      <div class="d-flex justify-content-center flex-column flex-sm-row">
-        <div class="pr-2 zip-text">
-          <p class="text-right text mt-0">Check if we deliver to</p>
+  <div class="zip-check zip-check-large container pb-5 pt-0 mb-5">
+    <div class="container px-0 m-0 mx-sm-auto">
+      <div class="d-flex justify-content-center flex-column flex-sm-row shop-btns">
+        <div class="pb-3 pb-sm-0 pr-2 zip-text">
+          <h2 class="text-sm-right text-center text m-0">Where should we deliver?</h2>
         </div><!-- zip-text -->
-        <div class="p-0 zip-input">
+        <div class="zip-input pb-4 pb-sm-0 mx-auto mx-sm-4">
           <label for="example-text-input" class="form-control-label text-center">zip code</label>
-          <input class="form-control zip-code" type="text" value="11101" id="zip-code1">
+          <input class="form-control zip-code  mr-4" type="text" value="11101" id="zip-code1">
         </div><!-- zip-input-->
-      </div>
-    </div><!-- form-group -->
-    <div class="d-flex justify-content-center flex-column flex-sm-row shop-btns">
-      <div class="px-2">
-        <button class="btn btn-primary btn-business px-5" type="submit">Shop Office</button>
-      </div>
-      <div class="px-2">
-        <button class="btn btn-primary px-5" type="submit">Shop Home</button>
-      </div>
-    </div><!-- shop-btns -->
+        <div class="pr-0 pb-2 pb-sm-0 pr-sm-2 mx-auto mx-sm-0 mx-sm-0 d-flex justify-content-center">
+          <button class="btn btn-primary btn-business px-5" type="submit">Shop Office</button>
+        </div>
+        <div class="mx-auto mx-sm-0 mx-sm-0 d-flex justify-content-center">
+          <button class="btn btn-primary px-5" type="submit">Shop Home</button>
+        </div>
+      </div><!-- d-flex -->
+    </div><!-- container -->
   </div><!-- zip-check -->
 
-  <div class="article-list container py-4 mb-3">
-    <h1>Win dinner!</h1>
+  <div id="win-dinner" class="article-list container pb-5 pt-0 mb-5">
+    <h2>Win dinner!</h2>
     <div class="hero-image">
-      <img src="/images/shortcuts/hero-shortcuts.jpg" alt="">
+      <img src="images/shortcuts/hero-shortcuts.jpg" alt="">
     </div>
     <div class="article pt-3">
-      <h2 class="header p-3">Easy to make Meal Kits</h2>
-      <div class="body p-3 d-flex flex-column flex-sm-row ">
-        <div class="text mr-3 p pr-3 flex-last flex-sm-first">
+      <h3 class="header py-3 p-sm-3">Easy to make Meal Kits</h3>
+      <div class="body pr-0 py-3 pr-sm-3 d-flex flex-column flex-sm-row">
+        <div class="text p-3  pt-sm-0 flex-last flex-sm-first">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quas, at neque! Odit quod, eum nam illo excepturi nemo ea similique dignissimos quia sit tempore vel perspiciatis ipsa aliquam rem.</p>
           <div class="footer">
-            <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
+            <a class="btn btn-outline-primary mt-2 px-5 px-sm-3" href="#">Learn More</a>
           </div>
         </div>
         <div class="media order-sm-first">
@@ -241,12 +250,12 @@
       </div>
     </div><!-- Article -->
     <div class="article pt-3">
-      <h2 class="header p-3">Recipes</h2>
-      <div class="body p-3 d-flex flex-column flex-sm-row ">
-        <div class="text mr-3 flex-last flex-sm-first">
+      <h3 class="header py-3 p-sm-3">Recipes</h3>
+      <div class="body pr-0 py-3 pr-sm-3 d-flex flex-column flex-sm-row">
+        <div class="text p-3  pt-sm-0 flex-last flex-sm-first">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quas, at neque! Odit quod, eum nam illo excepturi nemo ea similique dignissimos quia sit tempore vel perspiciatis ipsa aliquam rem.</p>
           <div class="footer">
-            <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
+            <a class="btn btn-outline-primary mt-2 px-5 px-sm-3" href="#">Learn More</a>
           </div>
         </div>
         <div class="media order-sm-first">
@@ -255,12 +264,12 @@
       </div>
     </div><!-- Article -->
     <div class="article pt-3">
-      <h2 class="header p-3">Food Hacks </h2>
-      <div class="body p-3 d-flex flex-column flex-sm-row ">
-        <div class="text mr-3 flex-last flex-sm-first">
+      <h3 class="header py-3 p-sm-3">Food Hacks </h3>
+      <div class="body pr-0 py-3 pr-sm-3 d-flex flex-column flex-sm-row">
+        <div class="text p-3  pt-sm-0 flex-last flex-sm-first">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quas, at neque! Odit quod, eum nam illo excepturi nemo ea similique dignissimos quia sit tempore vel perspiciatis ipsa aliquam rem.</p>
           <div class="footer">
-            <a class="btn btn-outline-primary mt-2" href="#">Learn More</a>
+            <a class="btn btn-outline-primary mt-2 px-5 px-sm-3" href="#">Learn More</a>
           </div>
         </div>
         <div class="media order-sm-first">
@@ -268,16 +277,30 @@
         </div>
       </div>
     </div><!-- Article -->
-  </div><!-- Article list -->
+  </div><!-- Article list win dinner -->
 
+  <div class="zip-check zip-check-large container pb-5 pt-0 mb-5">
+    <div class="container px-0 m-0 mx-sm-auto">
+      <div class="d-flex justify-content-center flex-column flex-sm-row shop-btns">
+        <div class="pb-3 pb-sm-0 pr-2 zip-text">
+          <h2 class="text-sm-right text-center text m-0">Where should we deliver?</h2>
+        </div><!-- zip-text -->
+        <div class="zip-input pb-4 pb-sm-0 mx-auto mx-sm-4">
+          <label for="example-text-input" class="form-control-label text-center">zip code</label>
+          <input class="form-control zip-code  mr-4" type="text" value="11101" id="zip-code1">
+        </div><!-- zip-input-->
+        <div class="pr-0 pb-2 pb-sm-0 pr-sm-2 mx-auto mx-sm-0 mx-sm-0 d-flex justify-content-center">
+          <button class="btn btn-primary btn-business px-5" type="submit">Shop Office</button>
+        </div>
+        <div class="mx-auto mx-sm-0 mx-sm-0 d-flex justify-content-center">
+          <button class="btn btn-primary px-5" type="submit">Shop Home</button>
+        </div>
+      </div><!-- d-flex -->
+    </div><!-- container -->
+  </div><!-- zip-check -->
 
-
-
-
-
-
-  <div class="quick-links quick-link-dark container d-flex justify-content-center row py-4 mb-3">
-    <div class="quick-links-header pb-4 row">
+  <div id="testimonials" class="quick-links quick-link-dark container pb-5 pt-0 mb-5">
+    <div class="quick-links-header pb-4 ">
       <h2>Who Loves FreshDirect?</h2>
     </div><!-- quick-link-header -->
     <div class="quick-link-body col-size-300 d-flex justify-content-center flex-wrap flex-sm-wrap mb-2" >
@@ -340,6 +363,25 @@
     </div><!-- quick-link-body -->
   </div><!-- quich-links Delivery pass -->
 
+  <div class="zip-check zip-check-large container pb-5 pt-0 mb-5">
+    <div class="container px-0 m-0 mx-sm-auto">
+      <div class="d-flex justify-content-center flex-column flex-sm-row shop-btns">
+        <div class="pb-3 pb-sm-0 pr-2 zip-text">
+          <h2 class="text-sm-right text-center text m-0">Where should we deliver?</h2>
+        </div><!-- zip-text -->
+        <div class="zip-input pb-4 pb-sm-0 mx-auto mx-sm-4">
+          <label for="example-text-input" class="form-control-label text-center">zip code</label>
+          <input class="form-control zip-code  mr-4" type="text" value="11101" id="zip-code1">
+        </div><!-- zip-input-->
+        <div class="pr-0 pb-2 pb-sm-0 pr-sm-2 mx-auto mx-sm-0 mx-sm-0 d-flex justify-content-center">
+          <button class="btn btn-primary btn-business px-5" type="submit">Shop Office</button>
+        </div>
+        <div class="mx-auto mx-sm-0 mx-sm-0 d-flex justify-content-center">
+          <button class="btn btn-primary px-5" type="submit">Shop Home</button>
+        </div>
+      </div><!-- d-flex -->
+    </div><!-- container -->
+  </div><!-- zip-check -->
 
   <script src="js/script.js"></script>
 

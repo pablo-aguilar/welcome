@@ -2,9 +2,15 @@ nav {
   background-color: rgba( $brand-primary, 0.9);
   .logo {
     @include text-hide;
-    background: url(../../images/fd-logo.svg) no-repeat center center;
+    background: url(../images/fd-logo.svg) no-repeat center center;
     display: block;
     width: 148px;
     height: 34px;
   }
+  .btn {
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-sm;
+     }
+  }
+
 }
